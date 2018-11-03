@@ -14,7 +14,10 @@
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="/laravel_blog/public/services">Service <span class="sr-only">(current)</span></a>
-            </li>      
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/laravel_blog/public/posts">Blog <span class="sr-only">(current)</span></a>
+            </li>            
         </ul>
     </div>
  </nav>
