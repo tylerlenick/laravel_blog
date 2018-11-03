@@ -7,12 +7,18 @@
     <link rel="stylesheet" href={{asset('css/app.css')}}>
     <title>{{config('app.name', 'laravel_blog')}}</title>
 </head>
-<body>
-    @include('inc.navbar')
-</br>
-</br>
-    <div class="container">
-        @yield('content')
-    </div>
-</body>
+    <body>
+        @include('inc.navbar')
+    </br>
+    </br>
+        <div class="container">
+            @include('inc.messages')
+            @yield('content')
+        </div>
+
+        <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+        <script>
+            CKEDITOR.replace( 'article-ckeditor' );
+        </script>
+    </body>
 </html>

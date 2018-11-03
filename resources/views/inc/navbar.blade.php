@@ -17,6 +17,11 @@
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="/laravel_blog/public/posts">Blog <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item active navbar-right">
+                <a class="nav-link" href="/laravel_blog/public/posts/create">Create Post <span class="sr-only">(current)</span></a>
             </li>            
         </ul>
     </div>
