@@ -8,5 +8,12 @@
         {{$post->body}}
     </div>
     <hr>
-    <small>Written on {{$post->created_at}}</small> 
+    <small>Written on {{$post->created_at}}</small>
+    <hr>
+    <a href="/laravel_blog/public/posts/{{$post->id}}/edit" class="btn btn-primary">Edit</a>
+    
+    {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'float-right'])!!}
+        {{Form::hidden('_method', 'delete')}}
+        {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+    {!!Form::close() !!}
 @endsection
